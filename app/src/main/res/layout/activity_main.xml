@@ -19,6 +19,7 @@
         android:id="@+id/btn2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+    <!--ScrollView中的子view是一个TextView-->
 <ScrollView
     android:layout_below="@+id/btn2"
     android:id="@+id/scrollView"
@@ -27,7 +28,7 @@
     <TextView
         android:id="@+id/tv_show"
         android:layout_width="wrap_content"
-        android:layout_height="300dp"
+        android:layout_height="wrap_content"
         />
 </ScrollView>
 </RelativeLayout>

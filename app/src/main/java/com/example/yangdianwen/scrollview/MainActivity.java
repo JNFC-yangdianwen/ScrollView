@@ -24,8 +24,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         txt_show = (TextView) findViewById(R.id.tv_show);
         button.setOnClickListener(this);
         button1.setOnClickListener(this);
-
+        //使用StringBuilder缓冲区，高效
         StringBuilder sb = new StringBuilder();
+        //使用for循环往缓冲区中添加数据
         for (int i = 1; i <= 100; i++) {
             sb.append("呵呵 * " + i + "\n");
         }
@@ -37,11 +38,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.btn1:
+                //scrollView滑到顶部的动作事件
                 scrollView.fullScroll(ScrollView.FOCUS_UP);
                 break;
             case R.id.btn2:
+                //scrollView滑到底部的动作事件
                 scrollView.fullScroll(ScrollView.FOCUS_DOWN);
-
                 break;
         }
     }
